@@ -46,6 +46,7 @@ const weatherForecasts = [
 return (
 <>
 <h1>Local Weather</h1>
+<body>
 <section>
   {weatherForecasts.map((forecast, index) => (
     <WeatherForecast
@@ -56,8 +57,10 @@ return (
     conditions={forecast.conditions}
     time={forecast.time}
     />
+  
   ))}
 </section>
+</body>
 </>
 );
 
